@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF4E6"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/all_img"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/milk"
+            android:layout_gravity="center"
+            android:contentDescription="@string/image_popular" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/all_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/amethysta"
+            android:text="@string/product_name"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#AD000000"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amethysta"
+                android:text="$"
+                android:textColor="#AD000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/all_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amethysta"
+                android:text="9058"
+                android:textColor="#AD000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                 />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

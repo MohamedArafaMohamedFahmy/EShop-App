@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "697063011462",
+    "firebase_url": "https://notepad-9a237.firebaseio.com",
+    "project_id": "notepad-9a237",
+    "storage_bucket": "notepad-9a237.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697063011462:android:9fc84cb57b137e67060d07",
+        "android_client_info": {
+          "package_name": "com.arafa.mohamed.eshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697063011462-b0efpv867dp7pjus58j0doje8gpp9rmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOSm2FSLZahmsONGSiXw1HvqSRA4halIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697063011462-b0efpv867dp7pjus58j0doje8gpp9rmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697063011462:android:b85fb60a5415a94d",
+        "android_client_info": {
+          "package_name": "com.arafa.mohamed.notepad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697063011462-50bqga2lm54q8d6fb46enh9a097vgnop.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arafa.mohamed.notepad",
+            "certificate_hash": "fa9ac569cb0b69f77e88ca936e198975348f8e15"
+          }
+        },
+        {
+          "client_id": "697063011462-b0efpv867dp7pjus58j0doje8gpp9rmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOSm2FSLZahmsONGSiXw1HvqSRA4halIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697063011462-b0efpv867dp7pjus58j0doje8gpp9rmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697063011462:android:8135d21d6b1d46b1",
+        "android_client_info": {
+          "package_name": "com.arafa.mohamed.notes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697063011462-0j3m8tcsdn5s3hdkv7h7b2pj83aphabg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arafa.mohamed.notes",
+            "certificate_hash": "fa9ac569cb0b69f77e88ca936e198975348f8e15"
+          }
+        },
+        {
+          "client_id": "697063011462-b0efpv867dp7pjus58j0doje8gpp9rmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOSm2FSLZahmsONGSiXw1HvqSRA4halIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697063011462-b0efpv867dp7pjus58j0doje8gpp9rmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">EShop</string>
+
+    //text view
+    <string name="first_text">First ,lets find your account</string>
+    <string name="second_text">Please enter your email</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="doNot_have_an_account">Don\'t have an account?</string>
+    <string name="curve">Curve</string>
+    <string name="first_slider">Choose Your Products</string>
+    <string name="second_slider">Fast Delivery</string>
+    <string name="third_slider">Good Service</string>
+    <string name="description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</string>
+    <string name="category">Category</string>
+    <string name="new_products">New Products</string>
+    <string name="we_provide_best_products">We provide best products.</string>
+    <string name="product_see_all">See All</string>
+    <string name="popular_products">Popular Products</string>
+    <string name="category_name">Category Name</string>
+    <string name="image_category">Image Category</string>
+    <string name="product_name">Product Name</string>
+    <string name="text_new">New</string>
+    <string name="image_popular">Image Popular</string>
+    <string name="image_new">Image New</string>
+    <string name="image_detailed">Image Detailed</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="my_cart">My Cart</string>
+    <string name="loading">Loading…</string>
+    <string name="total">Total</string>
+    <string name="shipping">Shipping</string>
+    <string name="sub_total">Sub-Total</string>
+    <string name="in_your_shopping_cart">in your shopping cart</string>
+    <string name="dollar">$</string>
+
+    //Edittext
+    <string name="email_address">Email address</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    //Button
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="find_account">Find Account</string>
+    <string name="lets_get_started">Lets get started</string>
+    <string name="image_plus">Image Plus</string>
+    <string name="image_minus">Image Minus</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="image_item">Image Item</string>
+
+    <string name="arrow_back">arrow back</string>
+    <string name="image_cart">Image Cart</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="edit_the_address">Edit The Address</string>
+    <string name="maps">Maps</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="save">Save</string>
+    <string name="note">Note</string>
+    <string name="next">next</string>
+    <string name="notification">Notification</string>
+    <string name="do_you_want_to_log_out">Do you want to log out?</string>
+    <string name="no">NO</string>
+    <string name="yes">Yes</string>
+
+
+
+
+</resources>

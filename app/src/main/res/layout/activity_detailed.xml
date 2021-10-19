@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF4E6"
+    android:layoutDirection="ltr"
+    tools:context=".activities.DetailedActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_detailed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        app:title="Product Detailed"
+        android:layout_alignParentTop="true"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_detailed"
+        android:background="#F4D7B1"
+
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_detailed_product"
+            android:contentDescription="@string/image_detailed"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_launcher_foreground"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_detailed"
+            android:translationY="-30dp"
+            android:layout_below="@id/image_detailed_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            app:cardBackgroundColor="@color/transparent"
+            android:layout_marginHorizontal="10dp"
+            app:cardCornerRadius="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#C8FAC786"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/product_name_detailed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product Name"
+                        android:fontFamily="@font/amethysta"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="#000"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@id/text_rating"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/text_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.0"
+                        android:fontFamily="@font/amethysta"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toStartOf="@id/my_rating"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/my_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="5dp"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_alignParentEnd="true"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:padding="5dp"
+                        android:background="@drawable/bg_card_view"
+                        >
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$"
+                            android:fontFamily="@font/amethysta"
+                            android:textStyle="bold"
+                            android:textSize="21sp"
+                            android:textColor="#E65100"
+                            />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/text_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="600"
+                            android:fontFamily="@font/amethysta"
+                            android:textStyle="bold"
+                            android:textSize="21sp"
+                            android:textColor="#E65100"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        >
+                        <ImageButton
+                            android:id="@+id/img_minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_minus"
+                            android:background="@color/transparent"
+                            android:contentDescription="@string/image_minus" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/text_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:fontFamily="@font/amethysta"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:padding="5dp"
+                            android:textColor="#000"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginBottom="5dp"
+                            />
+                        <ImageButton
+                            android:id="@+id/img_plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_plus"
+                            android:background="@color/transparent"
+                            android:contentDescription="@string/image_plus" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/description_detailed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A digital camera is a camera that captures photographs in digital memory. Most cameras produced today are digital, largely replacing those that capture images on photographic film. While there are still dedicated digital cameras, many more cameras are now incorporated into mobile devices like smartphones, which can, among many other purposes, use their cameras to initiate live video-telephony and directly edit and upload images to others"
+                    android:fontFamily="@font/amethysta"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:textAlignment="viewStart"
+                    android:layout_gravity="start"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_add_to_cart"
+            android:layout_below="@id/card_detailed"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/transparent"
+            >
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/RippleStyleGrey"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_add_to_cart"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_button"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/mycart"
+                    android:textStyle="bold"
+                    android:text="@string/add_to_cart"
+                    android:textAllCaps="false"
+                    />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_buy_now"
+            android:layout_below="@id/card_add_to_cart"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/transparent"
+            >
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/RippleStyleGrey"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_buy_now"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_button"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/ic_baseline_shopping_cart_24"
+                    android:textStyle="bold"
+                    android:text="@string/buy_now"
+                    android:textAllCaps="false"
+                    />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
