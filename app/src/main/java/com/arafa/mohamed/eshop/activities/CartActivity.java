@@ -29,6 +29,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class CartActivity extends AppCompatActivity implements CartAdapter.OnCartInfoListener{
     AppCompatTextView tvNumberOfItems,tvSubTotal,tvShipping,tvTotal;
@@ -56,28 +57,20 @@ public class CartActivity extends AppCompatActivity implements CartAdapter.OnCar
         btBuyNow = findViewById(R.id.button_buy_now);
         databaseReference= FirebaseDatabase.getInstance().getReference();
         firebaseAuth=FirebaseAuth.getInstance();
-        userId=firebaseAuth.getCurrentUser().getUid();
+       // userId= Objects.requireNonNull(firebaseAuth.getCurrentUser()).getUid();
         downloadAllCart=new ArrayList<>();
 
-        imgArrowBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
+        imgArrowBack.setOnClickListener(v -> finish());
+
+        btBuyNow.setOnClickListener(v -> {
+            for (int i = 0; i<downloadAllCart.size(); i++){
+                databaseReference.child("BuyNow").child(userId).child(downloadAllCart.get(i).getProductId()).setValue(downloadAllCart.get(i));
             }
+            Toast.makeText(CartActivity.this, "Purchased successfully", Toast.LENGTH_SHORT).show();
+
         });
 
-        btBuyNow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                for (int i = 0; i<downloadAllCart.size(); i++){
-                    databaseReference.child("BuyNow").child(userId).child(downloadAllCart.get(i).getProductId()).setValue(downloadAllCart.get(i));
-                }
-                Toast.makeText(CartActivity.this, "Purchased successfully", Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-        databaseReference.child("AddToCart").child(userId).addValueEventListener(new ValueEventListener() {
+/*        databaseReference.child("AddToCart").child(userId).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull  DataSnapshot snapshot) {
                 downloadAllCart.clear();
@@ -96,21 +89,19 @@ public class CartActivity extends AppCompatActivity implements CartAdapter.OnCar
                     Toast.makeText(CartActivity.this, "No items in My Cart", Toast.LENGTH_SHORT).show();
                     tvNumberOfItems.setText(String.valueOf(0+" items"));
                 }
-
             }
 
             @Override
             public void onCancelled(@NonNull  DatabaseError error) {
                 Toast.makeText(CartActivity.this, ""+error.getMessage(), Toast.LENGTH_SHORT).show();
-
             }
-        });
+        });*/
 
     }
 
     @Override
     public void onCartInfoListener(Intent intent) {
-        tvSubTotal.setText(String.valueOf("$ "+intent.getStringExtra("totalAmount")));
+        tvSubTotal.setText("$ " + intent.getStringExtra("totalAmount"));
         tvShipping.setText(String.valueOf("$ "+10));
         int total = Integer.parseInt(intent.getStringExtra("totalAmount"))+10;
         tvTotal.setText(String.valueOf("$ "+String.valueOf(total)));
